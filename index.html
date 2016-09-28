@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Accessibility Forms</title>
@@ -18,23 +18,13 @@
 
       <form action="" method="post" name="form1" id="form1">
       <p>1. Personal Details</p>
-      <p>Name:
-      <input type="text" id="textfield"></p>
-
-      <p>Phone Number:
-      <input type="text" id="textfield3"></p>
-
-      <p>Date of Birth:
-      <input type="text" tabindex="-1" id="textfield2"></p>
-
-      <p><label for="textfield4">First Name:
-      <input type="text" id="textfield4"></p>
-
-      <p>Last Name:
-      <input type="text" tabindex="4" id="textfield5"></p>
-
-      <p><label for="address">Address:</label>
-      <input type="text"></p>
+      <label for="textfield">Name</label><input type="text" id="textfield"></p>
+      <label for="textfield3">Phone Number</label><input type="text" id="textfield3"></p>
+      <label for="textfield2">Date of Birth</label><input type="text" tabindex="-1" id="textfield2"></p>
+	  <label for="textfield4">First Name:</label><input type="text" id="textfield4"></p>
+      <label for="textfield5">Last Name:</label><input type="text" id="textfield5"></p>
+	  <label for="address">Address:</label>
+      <input type="text" id="address"></p>
 
       <p>State:
        <select id="state">
@@ -52,22 +42,15 @@
 
       <fieldset>
       <legend>2. Emergency Contact</legend>
-      <p>Name:
-      <input type="text" id="textfield13"></p>
-
-      <p>Address:
-      <input type="text" id="textfield14"></p>
-
-      <p>State
-      <input type="text" id="textfield15"></p>
-
-      <p>Telephone:
-      <input type="text" id="textfield16"></p>
+      <label for="textfield13">Name:</label><input type="text" id="textfield13"></p>
+      <label for="textfield14">Address:</label><input type="text" id="textfield14"></p>
+      <label for="textfield15">State</label><input type="text" id="textfield15"></p>
+      <label for="textfield16">Telephone:</label><input type="text" id="textfield16"></p>
       </fieldset>
 
       <p>3. Citizenship</p>
-      <p><input type="radio">United States</p>
-      <p><input type="radio">Canada</p>
+      <p><label for="united">United States</label><input id="united" type="radio"></p>
+      <p><label for="canada">Canada</label><input id="canada" type="radio"></p>
 
       <p><input type="submit" value="Submit" id="button" name="button"></p>
       </form>
